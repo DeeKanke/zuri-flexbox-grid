@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body .flex {
+    background-color: hsl(0, 0%, 95%);
+  }
+  .main {
+    width: 50vw;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 2rem;
+    -webkit-columns: 3 50vh;
+    -moz-columns: 3 50vh;
+    columns: 3 50vh;
+  }
+  .main h2 {
+    color: hsl(0, 0%, 95%);
+    font-size: 30px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    font-family: "Big Shoulders Display", cursive;
+    font-weight: 700;
+  }
+  .main p {
+    color: hsl(0, 0%, 95%);
+    font-size: 15px;
+    
+    padding: 0px 40px 20px;
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+  }
+  .main .sedans{
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+  .main .suvs {
+    background-color: hsl(184, 100%, 22%);
+  }
+  .main .luxury {
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    
+  }
+  .main button {
+    padding: 10px 20px;
+    border: 2px solid hsl(0, 0%, 95%);
+    border-radius: 55px;
+    font-size: 10px;
+    margin: 15px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .sedansbtn {
+    background-color: hsl(31, 77%, 52%);
+    color: hsl(0, 0%, 95%);
+  }
+  .suvsbtn {
+    background-color: hsl(184, 100%, 22%);
+    color: hsl(0, 0%, 95%);
+  }
+  .luxurybtn {
+    background-color: hsl(179, 100%, 13%);
+    color: hsl(0, 0%, 95%);
+  }
+  button:hover {
+    cursor: pointer;
+    background-color: beige;
+    color: hsl(180, 32%, 8%);
+  }
+  /*.clickgrid{
+    position: absolute;
+    bottom: 0;
+    
+  }
+  
+  
+  @media screen and (max-width:700px){
+  
+  }*/
+  
+  
+  /*styling for CSS grid*/
+  * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  body.grid {
+    background-color: hsl(270, 5%, 7%);
+    margin-top: 100px;
+  }
+  .cssgrid {
+    display: grid;
+    grid-template-areas:
+      "a a a b b"
+      "a a a b b"
+      "c c d d d"
+      "c c e e e";
+    gap: 10px;
+    height: 500px;
+    width: 700px;
+    margin: auto;
+    padding-top: 100px;
+  }
+  .grid-a {
+    background-color: hsl(103, 80%, 36%);
+    grid-area: a;
+  }
+  .grid-b {
+    background-color: hsl(0, 84%, 43%);
+    grid-area: b;
+  }
+  .grid-c {
+    background-color: hsl(283, 91%, 38%);
+    grid-area: c;
+  }
+  .grid-d {
+    background-color: hsl(216, 91%, 47%);
+    grid-area: d;
+  }
+  .grid-e {
+    background-color: hsl(337, 90%, 52%);
+    grid-area: e;
+  }
+  .click{
+    position: absolute;
+    top:0;
+    color:hsla(179, 87%, 80%, 0.944);
+    font-size: 40px;
+    padding: 150px;
+    margin-left: 150px;
+  }
+  .gridlink{
+    color: hsla(179, 86%, 80%, 0.726);
+  }
+  
+  .gridlink:hover {
+    cursor: pointer;
+    color: hsl(0, 91%, 43%);
+  }
