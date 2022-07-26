@@ -5,6 +5,7 @@
   }
   body .flex {
     background-color: hsl(0, 0%, 95%);
+    position: relative;
   }
   .main {
     width: 50vw;
@@ -21,19 +22,20 @@
   .main h2 {
     color: hsl(0, 0%, 95%);
     font-size: 30px;
-    padding-bottom: 20px;
-    padding-top: 20px;
-    padding-left: 20px;
+    margin-left: 20px;
+    padding: 20px;
     font-family: "Big Shoulders Display", cursive;
     font-weight: 700;
   }
-  .main p {
+  .main .cars {
     color: hsl(0, 0%, 95%);
     font-size: 15px;
-    
     padding: 0px 40px 20px;
     font-family: "Lexend Deca", sans-serif;
     font-weight: 400;
+  }
+  img{
+    padding: 40px 0px 0px 40px;
   }
   .main .sedans{
     background-color: hsl(31, 77%, 52%);
@@ -50,13 +52,11 @@
     
   }
   .main button {
-    padding: 10px 20px;
+    padding: 10px 25px;
     border: 2px solid hsl(0, 0%, 95%);
     border-radius: 55px;
     font-size: 10px;
-    margin: 15px;
-    justify-content: center;
-    align-items: center;
+    margin: 50px 60px 30px;
   }
   
   .sedansbtn {
@@ -76,18 +76,24 @@
     background-color: beige;
     color: hsl(180, 32%, 8%);
   }
-  /*.clickgrid{
+  .clickgrid{
     position: absolute;
-    bottom: 0;
-    
+    left: 0%;
+    bottom: 75%;
+    color: hsla(211, 100%, 54%, 0.863);
+    font-size: 40px;
+    margin-left: 150px;
+    padding: 40px; 
   }
-  
-  
-  @media screen and (max-width:700px){
-  
-  }*/
-  
-  
+  .gridlink{
+    color: hsla(211, 100%, 54%, 0.863);
+  }
+  .gridlink:hover {
+    cursor: pointer;
+    color: hsl(0, 91%, 43%);
+  }
+
+
   /*styling for CSS grid*/
   * {
     margin: 0px;
@@ -136,14 +142,14 @@
     top:0;
     color:hsla(179, 87%, 80%, 0.944);
     font-size: 40px;
-    padding: 150px;
+    padding: 100px;
     margin-left: 150px;
   }
-  .gridlink{
-    color: hsla(179, 86%, 80%, 0.726);
+  .clickflex{
+    color:hsla(179, 87%, 80%, 0.944);
   }
   
-  .gridlink:hover {
+  .clickflex:hover {
     cursor: pointer;
     color: hsl(0, 91%, 43%);
   }
